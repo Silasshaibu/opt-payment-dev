@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTimedata</title>
+</head>
+<body>
+
+    <div class="realtime">
+        <div class="left">
+            <img src="./" alt="rr-icon" width="30px" height="30px"/> <span>ROCKET RIDES </span>
+        </div>
+        <div class="right">
+            <div class="top">
+                <span class="search">Search</span>
+            </div>
+            <div class="bottom">
+                <div class="grid-graph-style1 inner">
+                    <div class="col1 item1 Today">Today Section</div>
+                    <div class="col1 item2">Gross volume </div>
+                    <div class="col1 item3">August 18 </div>
+                    <div class="col1 item4">$3528,198.72 </div>
+                    <div class="col1 item5">$2528,198.72 </div>
+                    <div class="col1 item6">1:00PM </div>
+                    <div class="col1 item7">1:00PM </div>
+                    <div class="col1 item8">
+                        Put Graph Here 
+                        <!--Put Graph Here-->
+                    </div>
+                    <div class="col1 item9">12:00AM </div>
+                    <div class="col1 item10">Now </div>
+                </div>               
+
+                <div class="inner">
+                    <div class="grid-graph graph-2">
+                        <div class="col2">
+                            <span>Report Summary</span>
+                        </div>
+                        <div class="col2 lastweek">                           
+                            <span>Last 4 weeks</span>
+                            <span>July 18 - August 18</span>                            
+                        </div>
+                        <div class="col1">
+                            <span class="compared">Compared to previous</span>
+                        </div>                       
+                    </div>
+                    
+                    <!--Report Summar 1st graph-->
+                    <div class="graph-2">
+                        <div class="grid-graph">
+                            <div class="col2">
+                                Gross volume <span class="increment">+4.6%</span>
+                            </div>
+                            <div class="col1">
+                               $4,542,345
+                            </div>
+                            <div class="col1">
+                                <span class="float-right">$4,542,345</span>
+                            </div>
+                            <div class="col2 footer">
+                                <!--Put svg graph here-->
+                            </div>
+                            <div class="col1">
+                                Jul 18
+                            </div>
+                            <div class="col1">
+                                <span class="float-right">Aug 18</span>
+                            </div>
+                        </div>
+
+
+                    <!--Report Summar 2nd graph-->
+                        <div class="grid-graph">
+                            <div class="col2">
+                                Net Volume for last week 
+                            </div>
+                            <div class="col1">
+                               $4,180,345
+                            </div>                            
+                            <div class="col2 footer">
+                                <!--Put svg graph here-->
+                            </div>
+                            <div class="col1">
+                                Jul 18
+                            </div>
+                            <div class="col1">
+                                <span class="float-right">Aug 18</span>
+                            </div>
+                        </div>
+                      
+                    </div>                    
+                </div>                
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    .realtime{
+        border:1px solid black;
+        display: flex;
+        border-radius: 8px;
+        padding:10px;
+    }
+
+    .left{
+        flex:1;
+    }
+
+        .right{
+            flex:1.5;
+            font-size:12px;
+        }
+
+         .right .top{
+            border:1px solid green;
+            border-radius: 5px;
+            padding:4px 8px;
+         }
+
+         .inner{
+            margin:10px 0px;
+            border:1px solid rgb(107, 107, 248);           
+            border-radius: 5px;
+         }
+        
+         .Today {
+            border-bottom: 1px solid grey;
+            padding:8px 0px;
+            margin-bottom:10px;
+         }
+         
+        
+        .graph-2{
+            display: flex;
+            padding:8px;
+            column-gap:10px;
+            }
+
+            .graph-1{
+                flex:1;
+            }
+
+            .grid-graph{
+                flex:1;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);               
+            }
+
+            .grid-graph-style1{
+                padding:10px;
+                flex:1;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);               
+            }
+
+            .grid-graph .col1{
+                height:auto;
+            }
+
+            div.col1.item1, div.col1.item8,  .grid-graph .col2, .graph-2 .col2{               
+                grid-column:1 / -1;              
+            }
+
+            div.col1.item2{
+                grid-column: 1 / 2;
+            }
+
+            div.col1.item3, div.col1.item5, div.col1.item10  { 
+                grid-column: 2 / 5; 
+            }         
+
+            div.col1.item10{
+                text-align: right;
+            }
+
+            .col1 .float-right{
+                float:right;                
+            }
+            
+            .increment{
+                background-color: rgba(35, 163, 35, 0.464);
+                border-radius: 3px;
+                padding:1px;
+            }
+
+            div.col2.lastweek{
+                grid-column: 1/-2;
+                display:flex;
+                justify-content: space-between;
+            }
+</style>
+</html>
