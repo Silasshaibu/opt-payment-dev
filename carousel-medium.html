@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel-Medium</title>
+</head>
+
+<body>
+    <div class="product-bigContainer"> 
+        <div class="product">
+            <div class="productImgContainer">
+                <img src="" alt="productImage" />
+            </div>
+
+            <div class="productInfoContainer">  
+                <div class="prodInfoCol">
+                    <img src= "" alt="miniImg"/> <span class="ProductTitle">Clover Mini</span>
+                </div> 
+                <div class="prodInfoCol prodInfo">
+                    The Clover Mini is an all-in-one POS that 
+                    supports accessories like a kitchen printer,
+                    barcode scanner, cash drawer, and others.
+                </div> 
+                <div class="prodInfoCol readMore">
+                    <a href="#"><span class="read-more">Read More
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon right-arrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg></span>
+                    </a>
+                </div>              
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .product-bigContainer{
+        width:300px;
+        padding:50px;
+        border:1px solid black;
+    }
+
+    .product{
+        border:1px solid red;
+    }
+
+    .productImgContainer{
+        border:1px solid black;
+        height:200px;
+        width:200px;
+        margin:0 auto;
+        background-color: grey;
+    }
+
+    .productInfoContainer{        
+        border:1px solid black;
+        background-color: #8b3e3e;            
+        border-radius:5px;    
+    }
+
+    .productInfoContainer .prodInfoCol{
+        padding:30px 30px;
+    }
+
+    .productInfoContainer .prodInfoCol:first-child{
+        background-color: rgb(231, 231, 231);
+        z-index:-2;
+        border-radius:5px 5px 0px 0px;        
+    }
+
+    .productInfoContainer .prodInfoCol:last-child{        
+        padding-top:0px;
+        padding-bottom:30px;
+    }
+
+    .icon{
+        width:12px;
+        height:12px;
+        stroke:black; 
+        margin-left:0px;
+        cursor:arrow;
+    }  
+    
+    .icon.right-arrow {
+        transform: translate(3px, 2px); 
+        stroke:white;
+        transition:300ms;
+    }
+
+    .read-more{
+        cursor:pointer;
+    }
+    
+    .read-more:hover .icon.right-arrow{
+        transform: translate(6px, 2px); 
+    }
+
+    .readMore a{
+        text-decoration: none;
+        color:black;
+    }    
+</style>
+</html>   
